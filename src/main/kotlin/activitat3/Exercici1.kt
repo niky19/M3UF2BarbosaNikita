@@ -7,14 +7,16 @@ mostri per pantalla el contingut del missatge rebut precedit de la paraula
  */
 
 fun main() {
-    printRedError("Lorem Ipsum")
+    printRedError("Error Successful!")
 }
 
+//Fa servir codi ANSI per printar el missatge rebut en vermell.
+//Crèdits a https://stackoverflow.com/questions/5762491/how-to-print-color-in-console-using-system-out-println
 fun printRedError(msg: String) {
-    // Everything after this is in red
+    // El que vagi després d'aquesta variable es printarà en vermell
     val red = "\u001b[31m"
-    // Resets previous color codes
+    //El que vagi després d'aquesta variable ja no es printarà en vermell
     val reset = "\u001b[0m"
-    val error = "ERROR: "
-    println(red + error + msg + reset)
+    val errorMessage = "ERROR: "
+    println(red + errorMessage + msg + reset)
 }

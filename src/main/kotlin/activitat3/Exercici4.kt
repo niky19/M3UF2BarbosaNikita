@@ -21,5 +21,4 @@ fun pausa(){
             println("No has premut cap tecla. torna a intentar-ho.")
         }
     }
-
 }
