@@ -4,12 +4,14 @@ package activitat3
 una única tecla. Aquesta tecla no pot ser la tecla Intro i ha de funcionar amb la
 consola, és a dir: sense fer servir cap entorn gràfic.*/
 
-fun main() {
-pausa()
-}
+/*
+No es pot fer perquè no es pot detectar una tecla individual sense un entorn gràfic.
+ */
+
+
 
 //Retorna la tecla que ha premut l'usuari. No detecta tecles especials perquè es necessita un entorn gràfic.
-fun pausa(){
+/*fun pausa(){
     //Demana a l'usuari que premi una tecla
     println("Prem qualsevol tecla:")
     //Llegeix la tecla que ha premut l'usuari amb readln. No fem servir Scanner perquè no detecta tecles individuals.
@@ -21,4 +23,4 @@ fun pausa(){
             println("No has premut cap tecla. torna a intentar-ho.")
         }
     }
-}
+}*/
