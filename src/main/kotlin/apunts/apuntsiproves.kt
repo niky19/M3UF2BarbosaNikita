@@ -16,7 +16,28 @@ Clean code M03:
 //Funció: fa una tasca concreta i retorna un valor
 //Funció sense paràmetres: no té paràmetres, però retorna un valor
 //Procediment: és una funció que pot tenir paràmetres, però no retorna res.
+
+
+/*
+Debug: Clic derecho para condiciones
+hacer un braek point (cuando x vale a y y vale b cuanto valdra z? justificar respuesta y captura de pantalla
+(añadir breakpoints)
+
+ */
+
 fun main() {
-    val sc = Scanner(System.`in`)
-    llegirNumeroEnter()
+    var x:Int=0  // Variable local a la funció main
+    while (x <= 10) {
+        println("El sumatori de 1 a $x és ${sumatori(1,x)}")
+        x++
+    }
+}
+fun sumatori(inici:Int, final:Int) : Int {
+    var resultat:Int = 0
+    var x:Int = inici	//Variable local a la funció sumatori
+    while (x <= final) {
+        resultat +=x
+        x++
+    }
+    return resultat
 }
